@@ -1,0 +1,139 @@
+:root{
+    --color-bg-msg: #D5F5E3;
+    --color-bg-msg-rec: #76D7C4;
+    --color-bg-msg-send: #6eb5c0;
+    --color-span-msg: white;
+}
+
+span{
+    font-weight:600;
+    color: var(--color-span-msg);
+    font-style: normal;
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 20px;
+    overflow-wrap: break-word;
+}
+
+.date{
+    font-size: x-small;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 0px;
+}
+
+
+
+
+.message_received, .message_send{
+    width:fit-content;
+    max-width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message_send{
+    background: var(--color-bg-msg-send);
+}
+
+/* .message::-webkit-scrollbar{
+    width: 0px;
+} */
+
+.section{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.message_received{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: var(--color-bg-msg-rec);
+}
+.section_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.chat{
+    max-width: 400px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.message{
+    border: 5px solid var(--color-bg-msg);
+    background: var(--color-bg-msg);
+    border-radius: 10px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.area_activity{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+textarea, #text{
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    resize: vertical;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    overflow: hidden;
+    max-height: fit-content;
+    border: 2px solid var(--color-bg-msg);
+    margin-right: 10px;
+    height: auto;
+    font-weight:600;
+    color: grey;
+    font-style: normal;
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea{
+    overflow: scroll;
+}
+
+#text:focus{
+    background: var(--color-bg-msg);    
+    border: 0px solid var(--color-bg-msg);
+    margin: 2px solid var(--color-bg-msg);
+}
+
+#send{
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    align-self: flex-end;
+    border-radius: 15px;
+}
+
+.user{
+    text-transform: uppercase;
+}
+
+.mess{
+    padding-left: 10px;
+}
+
+/* 
+div,span{
+    
+    border: 1px solid black;
+} */
